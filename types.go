@@ -84,6 +84,11 @@ type Traits struct {
 	AutonomousSystemOrganization string `json:"autonomous_system_organization,omitempty"`
 	Domain                       string `json:"domain,omitempty"`
 	IsAnonymousProxy             bool   `json:"is_anonymous_proxy,omitempty"`
+	IsAnonymous                  bool   `json:"is_anonymous,omitempty"`
+	IsAnonymousVPN               bool   `json:"is_anonymous_vpn,omitempty"`
+	IsPublicProx                 bool   `json:"is_public_proxy,omitempty"`
+	IsResdientialProxy           bool   `json:"is_residential_proxy,omitempyt"`
+	IsTorExitNode                bool   `json:"is_tor_exit_node,omitempty"`
 	IsSatelliteProvider          bool   `json:"is_satellite_provider,omitempty"`
 	Isp                          string `json:"isp,omitempty"`
 	IpAddress                    string `json:"ip_address,omitempty"`
