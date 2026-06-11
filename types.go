@@ -100,6 +100,18 @@ type MaxMind struct {
 	QueriesRemaining int `json:"queries_remaining,omitempty"`
 }
 
+type Anonymizer struct {
+	Confidence         int    `json:"confidence,omitempty"`
+	IsAnonymous        bool   `json:"is_anonymous,omitempty"`
+	IsAnonymousVPN     bool   `json:"is_anonymous_vpn,omitempty"`
+	IsHostingProvider  bool   `json:"is_hosting_provider,omitempty"`
+	IsPublicProxy      bool   `json:"is_public_proxy,omitempty"`
+	IsResidentialProxy bool   `json:"is_residential_proxy,omitempty"`
+	IsTorExitNode      bool   `json:"is_tor_exit_node,omitempty"`
+	NetworkLastSeen    string `json:"network_last_seen,omitempty"`
+	ProviderName       string `json:"provider_name,omitempty"`
+}
+
 type Response struct {
 	City               City               `json:"city,omitempty"`
 	Continent          Continent          `json:"continent,omitempty"`
@@ -111,4 +123,5 @@ type Response struct {
 	Subdivisions       []Subdivision      `json:"subdivisions,omitempty"`
 	Traits             Traits             `json:"traits,omitempty"`
 	MaxMind            MaxMind            `json:"maxmind,omitempty"`
+	Anonymizer         Anonymizer         `json:"anonymizer,omitempty"`
 }
