@@ -1,11 +1,11 @@
 module github.com/Lightspeed-Systems/geoip2
 
-go 1.24.1
+go 1.25.0
 
 require (
 	github.com/savaki/geoip2 v0.0.0-20150727150920-9968b08fbf39
 	github.com/smartystreets/goconvey v1.8.1
-	golang.org/x/net v0.38.0
+	golang.org/x/net v0.58.0
 )
 
 require (
